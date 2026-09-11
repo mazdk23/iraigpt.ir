@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پنل ادمین - iraigpt.ir</title>
+    <link rel="icon" type="image/png" href="C:\Users\LENOVO\Documents\iraigpt.ir\public\logo.png" />
+    <link rel="stylesheet" href="C:\Users\LENOVO\Documents\iraigpt.ir\public\styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="brand">
+          <img src="/logo.png" alt="iraigpt.ir logo" class="brand-logo" />
+          <div class="brand-text">
+            <h1>iraigpt.ir</h1>
+          </div>
+        </div>
+        <nav class="top-nav">
+          <a href="/" class="nav-link">چت</a>
+          <a href="C:\Users\LENOVO\Documents\iraigpt.ir\public\about.html" class="nav-link">درباره ما</a>
+          <a href="C:\Users\LENOVO\Documents\iraigpt.ir\public\contact.html" class="nav-link">ارتباط با ما</a>
+          <a href="C:\Users\LENOVO\Documents\iraigpt.ir\public\admin.html" class="nav-link active">پنل ادمین</a>
+        </nav>
+      </header>
+
+      <main class="page">
+        <section class="card">
+          <h2>ورود ادمین</h2>
+          <form id="loginForm" class="form-grid">
+            <label>
+              نام کاربری
+              <input id="username" type="text" required />
+            </label>
+            <label>
+              رمز عبور
+              <input id="password" type="password" required />
+            </label>
+            <button class="btn btn-primary" type="submit">ورود</button>
+            <p class="hint">
+              یوزر 1: <strong>mazdak</strong> - پسورد:
+              <strong>13891389mn</strong><br />
+              یوزر 2: <strong>mahyar</strong> - پسورد:
+              <strong>mahyer</strong>
+            </p>
+          </form>
+        </section>
+
+        <section id="adminPanel" class="card hidden">
+          <h2>مدیریت سایت</h2>
+          <p>
+            از این بخش می‌توانید مشخص کنید در آدرس اصلی سایت
+            (<code>/</code>) کدام صفحه نمایش داده شود.
+          </p>
+          <form id="homePageForm" class="form-grid">
+            <label>
+              انتخاب صفحه اصلی:
+              <select id="homePageSelect">
+                <option value="main">صفحه چت (اصلی)</option>
+                <option value="update">صفحه آپدیت</option>
+              </select>
+            </label>
+            <button class="btn btn-primary" type="submit">ذخیره تغییر</button>
+          </form>
+          <p id="adminStatus" class="status"></p>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <span>© همه حقوق متعلق به iraigpt.ir است.</span>
+      </footer>
+    </div>
+
+    <script src="/admin.js"></script>
+  </body>
+  </html>
+
